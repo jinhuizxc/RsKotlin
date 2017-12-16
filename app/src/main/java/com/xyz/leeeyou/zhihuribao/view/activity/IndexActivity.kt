@@ -15,9 +15,9 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout
 import java.util.*
 
 class IndexActivity : BaseOriginalActivity() {
-    val FIRST_PAGE_INDEX: Int = 0
+    private val FIRST_PAGE_INDEX: Int = 0
 
-    lateinit var mPtrFrame: PtrClassicFrameLayout
+    private lateinit var mPtrFrame: PtrClassicFrameLayout
     lateinit var mViewPagerAdapter: ViewPagerAdapter
 
     override fun setupActivityComponent() {
@@ -33,7 +33,7 @@ class IndexActivity : BaseOriginalActivity() {
     }
 
     private fun initViewPager() {
-        val viewPager = findViewById(R.id.viewpager) as ViewPager
+        val viewPager: ViewPager = findViewById(R.id.viewpager)
         viewPager.adapter = mViewPagerAdapter
 
         viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
@@ -48,7 +48,7 @@ class IndexActivity : BaseOriginalActivity() {
             }
         })
 
-        val viewPagerTab = findViewById(R.id.viewpagertab) as SmartTabLayout
+        val viewPagerTab: SmartTabLayout = findViewById(R.id.viewpagertab)
         viewPagerTab.setViewPager(viewPager)
     }
 
@@ -66,7 +66,7 @@ class IndexActivity : BaseOriginalActivity() {
     }
 
     private fun initPtr() {
-        mPtrFrame = findViewById(R.id.store_house_ptr_frame) as PtrClassicFrameLayout
+        mPtrFrame = findViewById(R.id.store_house_ptr_frame)
         mPtrFrame.disableWhenHorizontalMove(true)
         mPtrFrame.setPtrHandler(object : PtrHandler {
             override fun onRefreshBegin(frame: PtrFrameLayout?) {

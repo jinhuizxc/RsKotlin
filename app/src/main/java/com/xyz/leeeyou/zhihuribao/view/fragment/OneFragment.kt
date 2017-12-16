@@ -46,7 +46,7 @@ class OneFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = container!!.inflate(R.layout.fragment_one)
-        mRecyclerView = rootView.findViewById(R.id.recyclerView_one) as RecyclerView
+        mRecyclerView = rootView.findViewById(R.id.recyclerView_one)
         mRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         return rootView
     }
