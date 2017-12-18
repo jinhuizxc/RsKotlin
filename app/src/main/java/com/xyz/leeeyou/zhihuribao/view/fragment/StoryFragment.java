@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.xyz.leeeyou.zhihuribao.R;
-import com.xyz.leeeyou.zhihuribao.adapter.StoryAdapter;
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.RiBao;
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.Story;
+import com.xyz.leeeyou.zhihuribao.view.adapter.StoryAdapter;
+import com.xyz.leeeyou.zhihuribao.model.ribao.RiBao;
+import com.xyz.leeeyou.zhihuribao.model.ribao.Story;
 import com.xyz.leeeyou.zhihuribao.di.component.DaggerStoryComponent;
 import com.xyz.leeeyou.zhihuribao.di.module.StoryModule;
 import com.xyz.leeeyou.zhihuribao.utils.T;

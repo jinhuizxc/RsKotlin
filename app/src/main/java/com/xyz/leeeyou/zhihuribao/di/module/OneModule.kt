@@ -1,9 +1,9 @@
 package com.xyz.leeeyou.zhihuribao.di.module
 
-import com.xyz.leeeyou.zhihuribao.data.model.one.ID
-import com.xyz.leeeyou.zhihuribao.data.model.one.Index
-import com.xyz.leeeyou.zhihuribao.data.service.OneService
-import com.xyz.leeeyou.zhihuribao.data.service.ServiceFactory
+import com.xyz.leeeyou.zhihuribao.model.one.ID
+import com.xyz.leeeyou.zhihuribao.model.one.Index
+import com.xyz.leeeyou.zhihuribao.service.OneService
+import com.xyz.leeeyou.zhihuribao.service.ServiceFactory
 import dagger.Module
 import dagger.Provides
 import rx.Observable

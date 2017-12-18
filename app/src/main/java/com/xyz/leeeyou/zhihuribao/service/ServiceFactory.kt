@@ -1,4 +1,4 @@
-package com.xyz.leeeyou.zhihuribao.data.service
+package com.xyz.leeeyou.zhihuribao.service
 
 import retrofit.GsonConverterFactory
 import retrofit.Retrofit

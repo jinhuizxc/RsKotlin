@@ -1,8 +1,8 @@
-package com.xyz.leeeyou.zhihuribao.vi.one
+package com.xyz.leeeyou.zhihuribao.model.one
 
 import com.chad.library.adapter.base.entity.MultiItemEntity
-import com.xyz.leeeyou.zhihuribao.data.model.one.OneIndex
-import com.xyz.leeeyou.zhihuribao.data.model.one.Weather
+import com.xyz.leeeyou.zhihuribao.model.one.OneIndex
+import com.xyz.leeeyou.zhihuribao.model.one.Weather
 
 /**
  * Created by leeeyou on 2017/4/25.

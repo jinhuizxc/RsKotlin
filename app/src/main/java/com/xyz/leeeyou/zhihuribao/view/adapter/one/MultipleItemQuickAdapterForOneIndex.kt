@@ -1,10 +1,10 @@
-package com.xyz.leeeyou.zhihuribao.adapter.one
+package com.xyz.leeeyou.zhihuribao.view.adapter.one
 
 import com.bumptech.glide.Glide
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.xyz.leeeyou.zhihuribao.R
-import com.xyz.leeeyou.zhihuribao.vi.one.OneIndexMultipleItem
+import com.xyz.leeeyou.zhihuribao.model.one.OneIndexMultipleItem
 
 /**
  * Created by leeeyou on 2017/4/25.

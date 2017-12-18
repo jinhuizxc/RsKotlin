@@ -8,13 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.xyz.leeeyou.zhihuribao.R
-import com.xyz.leeeyou.zhihuribao.adapter.one.MultipleItemQuickAdapterForOneIndex
-import com.xyz.leeeyou.zhihuribao.data.model.one.ID
-import com.xyz.leeeyou.zhihuribao.data.model.one.Index
+import com.xyz.leeeyou.zhihuribao.view.adapter.one.MultipleItemQuickAdapterForOneIndex
+import com.xyz.leeeyou.zhihuribao.model.one.ID
+import com.xyz.leeeyou.zhihuribao.model.one.Index
 import com.xyz.leeeyou.zhihuribao.di.component.DaggerOneComponent
 import com.xyz.leeeyou.zhihuribao.di.module.OneModule
 import com.xyz.leeeyou.zhihuribao.utils.inflate
-import com.xyz.leeeyou.zhihuribao.vi.one.OneIndexMultipleItem
+import com.xyz.leeeyou.zhihuribao.model.one.OneIndexMultipleItem
 import com.xyz.leeeyou.zhihuribao.view.activity.IndexActivity
 import rx.Observable
 import rx.android.schedulers.AndroidSchedulers

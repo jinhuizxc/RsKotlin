@@ -1,7 +1,7 @@
-package com.xyz.leeeyou.zhihuribao.data.service
+package com.xyz.leeeyou.zhihuribao.service
 
-import com.xyz.leeeyou.zhihuribao.data.model.one.ID
-import com.xyz.leeeyou.zhihuribao.data.model.one.Index
+import com.xyz.leeeyou.zhihuribao.model.one.ID
+import com.xyz.leeeyou.zhihuribao.model.one.Index
 import retrofit.http.GET
 import retrofit.http.Path
 import rx.Observable

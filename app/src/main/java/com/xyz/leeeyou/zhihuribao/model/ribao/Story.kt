@@ -1,4 +1,4 @@
-package com.xyz.leeeyou.zhihuribao.data.model.ribao
+package com.xyz.leeeyou.zhihuribao.model.ribao
 
 /**
  * Created by leeeyou on 2017/4/21.

@@ -1,4 +1,4 @@
-package com.xyz.leeeyou.zhihuribao.view.activity;
+package com.xyz.leeeyou.zhihuribao.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

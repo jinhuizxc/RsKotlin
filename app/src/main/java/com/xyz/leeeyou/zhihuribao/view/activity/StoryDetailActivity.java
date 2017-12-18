@@ -5,7 +5,8 @@ import android.webkit.WebView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.xyz.leeeyou.zhihuribao.R;
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.StoryDetail;
+import com.xyz.leeeyou.zhihuribao.base.BaseOriginalActivity;
+import com.xyz.leeeyou.zhihuribao.model.ribao.StoryDetail;
 import com.xyz.leeeyou.zhihuribao.di.component.DaggerStoryComponent;
 import com.xyz.leeeyou.zhihuribao.di.component.StoryComponent;
 import com.xyz.leeeyou.zhihuribao.di.module.StoryModule;

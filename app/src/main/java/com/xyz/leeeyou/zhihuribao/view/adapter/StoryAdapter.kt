@@ -1,11 +1,11 @@
-package com.xyz.leeeyou.zhihuribao.adapter
+package com.xyz.leeeyou.zhihuribao.view.adapter
 
 import android.content.Intent
 import com.bumptech.glide.Glide
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.xyz.leeeyou.zhihuribao.R
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.Story
+import com.xyz.leeeyou.zhihuribao.model.ribao.Story
 import com.xyz.leeeyou.zhihuribao.view.activity.StoryDetailActivity
 
 /**

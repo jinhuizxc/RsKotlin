@@ -1,9 +1,9 @@
 package com.xyz.leeeyou.zhihuribao.di.module
 
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.RiBao
-import com.xyz.leeeyou.zhihuribao.data.model.ribao.StoryDetail
-import com.xyz.leeeyou.zhihuribao.data.service.ServiceFactory
-import com.xyz.leeeyou.zhihuribao.data.service.ZhiHuRiBaoService
+import com.xyz.leeeyou.zhihuribao.model.ribao.RiBao
+import com.xyz.leeeyou.zhihuribao.model.ribao.StoryDetail
+import com.xyz.leeeyou.zhihuribao.service.ServiceFactory
+import com.xyz.leeeyou.zhihuribao.service.ZhiHuRiBaoService
 import dagger.Module
 import dagger.Provides
 import rx.Observable
