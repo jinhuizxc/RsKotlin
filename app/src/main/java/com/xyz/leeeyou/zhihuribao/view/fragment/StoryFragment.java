@@ -48,9 +48,9 @@ public class StoryFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View inflate = inflater.inflate(R.layout.activity_story, container, false);
-        mRecyclerView = (RecyclerView) inflate.findViewById(R.id.recyclerView_zhihuribao);
-        return inflate;
+        View view = inflater.inflate(R.layout.activity_story, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView_zhihuribao);
+        return view;
     }
 
     @Override

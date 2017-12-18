@@ -26,7 +26,7 @@ public class ToolbarHelper {
         }
     }
 
-    public static void initToolbar(AppCompatActivity activity) {
+    private static void initToolbar(AppCompatActivity activity) {
         Toolbar toolbar = (Toolbar) activity.findViewById(R.id.toolbar);
 
         if (toolbar != null) activity.setSupportActionBar(toolbar);

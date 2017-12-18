@@ -64,7 +64,7 @@ public class StoryDetailActivity extends BaseOriginalActivity {
     }
 
     @Override
-    void setupActivityComponent() {
+    protected void setupActivityComponent() {
         storyModule = new StoryModule();
 
         storyComponent = DaggerStoryComponent

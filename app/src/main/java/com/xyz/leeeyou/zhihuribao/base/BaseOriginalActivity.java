@@ -18,22 +18,26 @@ public abstract class BaseOriginalActivity extends AppCompatActivity {
         super.setContentView(R.layout.activity_base_original);
 
         setupActivityComponent();
-
+        // 检查sdk的版本
         ToolbarHelper.checkSdkVersionToTranslucentFlag(getWindow());
     }
 
-    abstract void setupActivityComponent();
+    // 抽象方法
+    protected abstract void setupActivityComponent();
 
+    // 在activity里面重写setContentView(int layoutResID)方法
     @Override
     public void setContentView(int layoutResID) {
         ToolbarHelper.setContentView(this, layoutResID);
     }
 
+    // 在activity里面重写setContentView(View view)方法
     @Override
     public void setContentView(View view) {
         ToolbarHelper.setContentView(this, view);
     }
 
+    // 自定义父类方法，便于子类使用
     public void setLeftTitleAndDoNotDisplayHomeAsUp(String title) {
         ToolbarHelper.setLeftTitle(getSupportActionBar(), title);
         ToolbarHelper.hideHomeAsUp(getSupportActionBar());
