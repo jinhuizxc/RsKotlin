@@ -10,6 +10,10 @@ import com.xyz.leeeyou.zhihuribao.view.activity.StoryDetailActivity
 
 /**
  * Created by leeeyou on 16/9/27.
+ *  定义变量时，可在类型后面加一个问号?，
+ *  表示该变量是Nullable，不加表示该变量不可为null
+ *
+ *  实例化操作：StoryDetailActivity::class.java
  */
 
 class StoryAdapter(layoutResId: Int, data: List<Story>?) : BaseQuickAdapter<Story, BaseViewHolder>(layoutResId, data) {

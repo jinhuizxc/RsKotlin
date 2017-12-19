@@ -91,6 +91,9 @@ class IndexActivity : BaseOriginalActivity() {
         })
     }
 
+    /**
+     * 网络请求数据失败结束刷新
+     */
     fun refreshComplete() {
         mPtrFrame.refreshComplete()
     }

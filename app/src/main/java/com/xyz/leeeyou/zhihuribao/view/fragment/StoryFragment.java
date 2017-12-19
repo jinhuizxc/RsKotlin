@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,7 @@ import rx.schedulers.Schedulers;
  */
 public class StoryFragment extends BaseFragment {
 
+    private static final String TAG = StoryFragment.class.getSimpleName();
     private RecyclerView mRecyclerView;
     private StoryAdapter mAdapter;
 
@@ -80,6 +82,9 @@ public class StoryFragment extends BaseFragment {
         }, mRecyclerView);
     }
 
+    /**
+     * 加载data
+     */
     private void fetchStoryData() {
         storyObservable.subscribeOn(Schedulers.newThread())
                 .filter(new Func1<RiBao, Boolean>() {
@@ -120,10 +125,15 @@ public class StoryFragment extends BaseFragment {
                     public void onNext(RiBao ribao) {
                         ((IndexActivity) getActivity()).refreshComplete();
                         setDataToAdapter(ribao.getStories());
+                        Log.e(TAG,"结果 =" + ribao.getStories());
                     }
                 });
     }
 
+    /**
+     * 设置内容到适配器
+     * @param stories
+     */
     private void setDataToAdapter(@NonNull List<Story> stories) {
         if (mDatePosition == 0) {
             mAdapter.setNewData(stories);
