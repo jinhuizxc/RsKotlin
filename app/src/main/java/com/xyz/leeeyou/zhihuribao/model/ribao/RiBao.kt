@@ -11,6 +11,6 @@ package com.xyz.leeeyou.zhihuribao.model.ribao
  * 我们常常会创建一个只包含数据的类，其他什么事情都不做。
  * 在Kotlin中，这样的类叫做数据类，表示关键字为data:
  * data class User(val name: String, val age: Int)
-
+ * 加上data,可以转成string内容，不加的话获取的我就是RiBao的地址
  */
 data class RiBao(var date: String, var stories: List<Story>)

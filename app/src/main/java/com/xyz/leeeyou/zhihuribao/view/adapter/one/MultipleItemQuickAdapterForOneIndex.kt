@@ -20,6 +20,8 @@ class MultipleItemQuickAdapterForOneIndex(data: MutableList<OneIndexMultipleItem
 
     override fun convert(vh: BaseViewHolder, item: OneIndexMultipleItem) {
         when (item.itemType) {
+            //一开始觉得lambda很高级完全看不懂，其实很简单的就是把接口名、方法名和参数类型省掉不写再加个->罢了，
+        // 明白这点了很好理解。
             OneIndexMultipleItem.WEATHER -> {
                 vh.setText(R.id.tv_date, item.weather?.date)
                         .setText(R.id.tv_climate, item.weather?.climate + "，" + item.weather?.city_name)

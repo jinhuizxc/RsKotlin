@@ -1,4 +1,4 @@
-package com.xyz.leeeyou.zhihuribao.view.fragment
+package com.xyz.leeeyou.zhihuribao.base
 
 import android.support.v4.app.Fragment
 

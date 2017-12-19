@@ -3,6 +3,10 @@ package com.xyz.leeeyou.zhihuribao.model.ribao
 /**
  * Created by leeeyou on 2017/4/21.
  */
+
+/**
+ *
+ */
 data class StoryDetail(var body: String,
                        var image_source: String,
                        var title: String,

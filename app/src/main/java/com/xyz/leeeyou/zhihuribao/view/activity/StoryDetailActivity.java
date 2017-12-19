@@ -11,6 +11,7 @@ import com.xyz.leeeyou.zhihuribao.di.component.DaggerStoryComponent;
 import com.xyz.leeeyou.zhihuribao.di.component.StoryComponent;
 import com.xyz.leeeyou.zhihuribao.di.module.StoryModule;
 import com.xyz.leeeyou.zhihuribao.utils.HtmlUtils;
+import com.xyz.leeeyou.zhihuribao.utils.T;
 
 import javax.inject.Inject;
 
@@ -46,6 +47,7 @@ public class StoryDetailActivity extends BaseOriginalActivity {
 
         injectModule();
 
+        // 实现父类方法
         setLeftTitleAndDoNotDisplayHomeAsUp(storyTitle);
 
         initWebView();
@@ -97,10 +99,13 @@ public class StoryDetailActivity extends BaseOriginalActivity {
                     public void onError(Throwable e) {
                         mMaterialDialog.dismiss();
                         e.printStackTrace();
+                        T.showShort(StoryDetailActivity.this, "请求失败");
                     }
 
                     @Override
                     public void onNext(StoryDetail storyDetail) {
+                        // 下面第一个也能得到结果，不会有乱文。但弊端是没有限制屏幕，文章左右拖动会有空白区域
+//                        story_web.loadData(storyDetail.getBody(), "text/html; charset=UTF-8", null);
                         story_web.loadData(HtmlUtils.structHtml(storyDetail.getBody(), storyDetail.getCss()), "text/html; charset=UTF-8", null);
                     }
                 });

@@ -7,7 +7,7 @@ import com.xyz.leeeyou.zhihuribao.model.one.Weather
 /**
  * Created by leeeyou on 2017/4/25.
  */
-class OneIndexMultipleItem(private val itemType: Int, val indexData: OneIndex? = null, val weather: Weather? = null) : MultiItemEntity {
+data class OneIndexMultipleItem(private val itemType: Int, val indexData: OneIndex? = null, val weather: Weather? = null) : MultiItemEntity {
     companion object {
         val BLANK = -1
         val WEATHER = 0

@@ -26,17 +26,31 @@ public abstract class BaseOriginalActivity extends AppCompatActivity {
     protected abstract void setupActivityComponent();
 
     // 在activity里面重写setContentView(int layoutResID)方法
+
     @Override
     public void setContentView(int layoutResID) {
+//        super.setContentView(layoutResID);
         ToolbarHelper.setContentView(this, layoutResID);
     }
 
+
     // 在activity里面重写setContentView(View view)方法
+
+    /**
+     * 注释掉super方法，不然会报下面这个空指针异常：
+     *  Caused by: java.lang.NullPointerException:
+     *  Attempt to invoke virtual method 'void android.support.v7.app.ActionBar.setTitle(java.lang.CharSequence)' on a null object reference
+     * @param view
+     */
     @Override
     public void setContentView(View view) {
+//        super.setContentView(view);
         ToolbarHelper.setContentView(this, view);
     }
 
+    /**
+     * @param title
+     */
     // 自定义父类方法，便于子类使用
     public void setLeftTitleAndDoNotDisplayHomeAsUp(String title) {
         ToolbarHelper.setLeftTitle(getSupportActionBar(), title);

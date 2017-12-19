@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager
 import android.view.View
 import com.xyz.leeeyou.zhihuribao.R
 import com.xyz.leeeyou.zhihuribao.view.adapter.ViewPagerAdapter
-import com.xyz.leeeyou.zhihuribao.view.fragment.BaseFragment
+import com.xyz.leeeyou.zhihuribao.base.BaseFragment
 import com.xyz.leeeyou.zhihuribao.view.fragment.OneFragment
 import com.xyz.leeeyou.zhihuribao.view.fragment.StoryFragment
 import com.ogaclejapan.smarttablayout.SmartTabLayout

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.xyz.leeeyou.zhihuribao.R;
+import com.xyz.leeeyou.zhihuribao.base.BaseFragment;
 import com.xyz.leeeyou.zhihuribao.view.adapter.StoryAdapter;
 import com.xyz.leeeyou.zhihuribao.model.ribao.RiBao;
 import com.xyz.leeeyou.zhihuribao.model.ribao.Story;

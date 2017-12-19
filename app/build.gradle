@@ -41,15 +41,17 @@ dependencies {
 
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'io.reactivex:rxkotlin:1.0.0'
-
+    // glide
     compile 'com.github.bumptech.glide:glide:3.7.0'
 
-    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
-
-
-    compile 'net.danlew:android.joda:2.9.4.1'
-    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // 在涉及到“计算两个日期相差多久”这个场景的时候，java的日期处理方法使用起来就会显得很繁杂。
+    compile 'net.danlew:android.joda:2.9.4.1'
+    // smarttablayout
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    // material-dialogs
+    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
     // 封装好的BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.14'
     // 万能的pull-to-refresh库

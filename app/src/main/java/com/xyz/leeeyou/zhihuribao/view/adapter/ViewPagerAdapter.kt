@@ -3,7 +3,7 @@ package com.xyz.leeeyou.zhihuribao.view.adapter
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import com.xyz.leeeyou.zhihuribao.view.fragment.BaseFragment
+import com.xyz.leeeyou.zhihuribao.base.BaseFragment
 
 /**
  * Created by leeeyou on 2017/4/26.
